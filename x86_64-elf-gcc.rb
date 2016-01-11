@@ -28,7 +28,7 @@ class X8664ElfGcc < Formula
                              "--without-headers",
                              "--with-gmp=/usr/local/Cellar/gmp/6.1.0",
                              "--with-mpfr=/usr/local/Cellar/mpfr/3.1.3",
-                             "--with-mpc=/usr/local/Cellar/mpc/0.27"
+                             "--with-mpc=/usr/local/Cellar/libmpc/1.0.3"
       system 'make all-gcc'
       system 'make install-gcc'
       FileUtils.ln_sf binutils.prefix/"x86_64-elf", prefix/"x86_64-elf"
